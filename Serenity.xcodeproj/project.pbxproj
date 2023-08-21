@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230FA42F2A8C7CAE00948ABF /* SerenityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA42E2A8C7CAE00948ABF /* SerenityApp.swift */; };
+		230FA4332A8C7CAF00948ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230FA4322A8C7CAF00948ABF /* Assets.xcassets */; };
+		230FA4362A8C7CAF00948ABF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230FA4352A8C7CAF00948ABF /* Preview Assets.xcassets */; };
+		230FA43E2A8C7CEC00948ABF /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA43D2A8C7CEC00948ABF /* AudioService.swift */; };
+		230FA4412A8C7D4200948ABF /* Calm-space-ambient-track.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 230FA4402A8C7D4200948ABF /* Calm-space-ambient-track.mp3 */; };
+		230FA4472A8C7DD400948ABF /* DataStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4462A8C7DD400948ABF /* DataStringHelper.swift */; };
+		230FA4492A8C7E1800948ABF /* SentenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4482A8C7E1800948ABF /* SentenceModel.swift */; };
+		230FA44B2A8C835400948ABF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA44A2A8C835400948ABF /* HomeView.swift */; };
+		230FA44E2A8C840000948ABF /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA44D2A8C840000948ABF /* HeaderComponent.swift */; };
+		230FA4502A8C88DE00948ABF /* ButtonPrimaryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA44F2A8C88DE00948ABF /* ButtonPrimaryComponent.swift */; };
+		230FA4522A8C8BFE00948ABF /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4512A8C8BFE00948ABF /* TutorialView.swift */; };
+		230FA4542A8C8E3300948ABF /* ChatBubbleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4532A8C8E3300948ABF /* ChatBubbleComponent.swift */; };
+		230FA4582A8C8E6F00948ABF /* ChatBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4572A8C8E6F00948ABF /* ChatBubbleShape.swift */; };
+		230FA45A2A8C8ECF00948ABF /* ChatScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4592A8C8ECF00948ABF /* ChatScrollView.swift */; };
+		230FA45C2A8F12B000948ABF /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA45B2A8F12B000948ABF /* TutorialViewModel.swift */; };
+		230FA45E2A8F76A700948ABF /* BreathingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA45D2A8F76A700948ABF /* BreathingModel.swift */; };
+		230FA4602A8F77EF00948ABF /* BreathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA45F2A8F77EF00948ABF /* BreathViewModel.swift */; };
+		230FA4622A8F788B00948ABF /* BreathHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4612A8F788B00948ABF /* BreathHeaderComponent.swift */; };
+		230FA4642A8F78DD00948ABF /* BreathPracticeInfoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4632A8F78DD00948ABF /* BreathPracticeInfoComponent.swift */; };
+		230FA4662A8F796200948ABF /* BreathProgressComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4652A8F796200948ABF /* BreathProgressComponent.swift */; };
+		230FA4692A8F7A6400948ABF /* ButtonTimerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4682A8F7A6400948ABF /* ButtonTimerComponent.swift */; };
+		230FA46C2A8F7BDC00948ABF /* RepeatBreathingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA46B2A8F7BDC00948ABF /* RepeatBreathingSheet.swift */; };
+		230FA46E2A8F7C3700948ABF /* BreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA46D2A8F7C3700948ABF /* BreathView.swift */; };
+		230FA4702A8FD6B600948ABF /* ButtonStoryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA46F2A8FD6B600948ABF /* ButtonStoryComponent.swift */; };
+		230FA4722A8FD70700948ABF /* SwitchStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4712A8FD70700948ABF /* SwitchStoryView.swift */; };
+		230FA4742A8FD80300948ABF /* CardFrontComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4732A8FD80300948ABF /* CardFrontComponent.swift */; };
+		230FA4762A8FD83200948ABF /* CardBackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4752A8FD83200948ABF /* CardBackComponent.swift */; };
+		230FA47A2A8FD89400948ABF /* AffirmationCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4792A8FD89400948ABF /* AffirmationCardViewModel.swift */; };
+		230FA47C2A8FDB4000948ABF /* AffirmationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA47B2A8FDB4000948ABF /* AffirmationCardView.swift */; };
+		230FA47E2A91AD2400948ABF /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA47D2A91AD2400948ABF /* SwitchView.swift */; };
+		230FA4842A91B01A00948ABF /* GlobalStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4832A91B01A00948ABF /* GlobalStateViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		230FA42B2A8C7CAE00948ABF /* Serenity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serenity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		230FA42E2A8C7CAE00948ABF /* SerenityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerenityApp.swift; sourceTree = "<group>"; };
+		230FA4322A8C7CAF00948ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		230FA4352A8C7CAF00948ABF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		230FA43D2A8C7CEC00948ABF /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		230FA4402A8C7D4200948ABF /* Calm-space-ambient-track.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Calm-space-ambient-track.mp3"; sourceTree = "<group>"; };
+		230FA4462A8C7DD400948ABF /* DataStringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStringHelper.swift; sourceTree = "<group>"; };
+		230FA4482A8C7E1800948ABF /* SentenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceModel.swift; sourceTree = "<group>"; };
+		230FA44A2A8C835400948ABF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		230FA44D2A8C840000948ABF /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		230FA44F2A8C88DE00948ABF /* ButtonPrimaryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimaryComponent.swift; sourceTree = "<group>"; };
+		230FA4512A8C8BFE00948ABF /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		230FA4532A8C8E3300948ABF /* ChatBubbleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleComponent.swift; sourceTree = "<group>"; };
+		230FA4572A8C8E6F00948ABF /* ChatBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleShape.swift; sourceTree = "<group>"; };
+		230FA4592A8C8ECF00948ABF /* ChatScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScrollView.swift; sourceTree = "<group>"; };
+		230FA45B2A8F12B000948ABF /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
+		230FA45D2A8F76A700948ABF /* BreathingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingModel.swift; sourceTree = "<group>"; };
+		230FA45F2A8F77EF00948ABF /* BreathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewModel.swift; sourceTree = "<group>"; };
+		230FA4612A8F788B00948ABF /* BreathHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathHeaderComponent.swift; sourceTree = "<group>"; };
+		230FA4632A8F78DD00948ABF /* BreathPracticeInfoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPracticeInfoComponent.swift; sourceTree = "<group>"; };
+		230FA4652A8F796200948ABF /* BreathProgressComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathProgressComponent.swift; sourceTree = "<group>"; };
+		230FA4682A8F7A6400948ABF /* ButtonTimerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTimerComponent.swift; sourceTree = "<group>"; };
+		230FA46B2A8F7BDC00948ABF /* RepeatBreathingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatBreathingSheet.swift; sourceTree = "<group>"; };
+		230FA46D2A8F7C3700948ABF /* BreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathView.swift; sourceTree = "<group>"; };
+		230FA46F2A8FD6B600948ABF /* ButtonStoryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStoryComponent.swift; sourceTree = "<group>"; };
+		230FA4712A8FD70700948ABF /* SwitchStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStoryView.swift; sourceTree = "<group>"; };
+		230FA4732A8FD80300948ABF /* CardFrontComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontComponent.swift; sourceTree = "<group>"; };
+		230FA4752A8FD83200948ABF /* CardBackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackComponent.swift; sourceTree = "<group>"; };
+		230FA4792A8FD89400948ABF /* AffirmationCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationCardViewModel.swift; sourceTree = "<group>"; };
+		230FA47B2A8FDB4000948ABF /* AffirmationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationCardView.swift; sourceTree = "<group>"; };
+		230FA47D2A91AD2400948ABF /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		230FA4832A91B01A00948ABF /* GlobalStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStateViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		230FA4282A8C7CAE00948ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230FA4222A8C7CAE00948ABF = {
+			isa = PBXGroup;
+			children = (
+				230FA42D2A8C7CAE00948ABF /* Serenity */,
+				230FA42C2A8C7CAE00948ABF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		230FA42C2A8C7CAE00948ABF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				230FA42B2A8C7CAE00948ABF /* Serenity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		230FA42D2A8C7CAE00948ABF /* Serenity */ = {
+			isa = PBXGroup;
+			children = (
+				230FA4452A8C7DBC00948ABF /* Helpers */,
+				230FA4442A8C7DA000948ABF /* View Models */,
+				230FA4432A8C7D8E00948ABF /* Views */,
+				230FA4422A8C7D8500948ABF /* Models */,
+				230FA43F2A8C7D3400948ABF /* Resources */,
+				230FA43C2A8C7CD500948ABF /* Services */,
+				230FA42E2A8C7CAE00948ABF /* SerenityApp.swift */,
+				230FA4322A8C7CAF00948ABF /* Assets.xcassets */,
+				230FA4342A8C7CAF00948ABF /* Preview Content */,
+			);
+			path = Serenity;
+			sourceTree = "<group>";
+		};
+		230FA4342A8C7CAF00948ABF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				230FA4352A8C7CAF00948ABF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		230FA43C2A8C7CD500948ABF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				230FA43D2A8C7CEC00948ABF /* AudioService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		230FA43F2A8C7D3400948ABF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				230FA4402A8C7D4200948ABF /* Calm-space-ambient-track.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		230FA4422A8C7D8500948ABF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				230FA4482A8C7E1800948ABF /* SentenceModel.swift */,
+				230FA45D2A8F76A700948ABF /* BreathingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		230FA4432A8C7D8E00948ABF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				230FA44C2A8C83AB00948ABF /* Components */,
+				230FA44A2A8C835400948ABF /* HomeView.swift */,
+				230FA4512A8C8BFE00948ABF /* TutorialView.swift */,
+				230FA4592A8C8ECF00948ABF /* ChatScrollView.swift */,
+				230FA46D2A8F7C3700948ABF /* BreathView.swift */,
+				230FA4712A8FD70700948ABF /* SwitchStoryView.swift */,
+				230FA47B2A8FDB4000948ABF /* AffirmationCardView.swift */,
+				230FA47D2A91AD2400948ABF /* SwitchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		230FA4442A8C7DA000948ABF /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				230FA45B2A8F12B000948ABF /* TutorialViewModel.swift */,
+				230FA45F2A8F77EF00948ABF /* BreathViewModel.swift */,
+				230FA4792A8FD89400948ABF /* AffirmationCardViewModel.swift */,
+				230FA4832A91B01A00948ABF /* GlobalStateViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		230FA4452A8C7DBC00948ABF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				230FA4462A8C7DD400948ABF /* DataStringHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		230FA44C2A8C83AB00948ABF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				230FA46A2A8F7B9300948ABF /* Sheet */,
+				230FA4672A8F7A1B00948ABF /* Button */,
+				230FA4562A8C8E6100948ABF /* Shape */,
+				230FA44D2A8C840000948ABF /* HeaderComponent.swift */,
+				230FA4532A8C8E3300948ABF /* ChatBubbleComponent.swift */,
+				230FA4612A8F788B00948ABF /* BreathHeaderComponent.swift */,
+				230FA4632A8F78DD00948ABF /* BreathPracticeInfoComponent.swift */,
+				230FA4652A8F796200948ABF /* BreathProgressComponent.swift */,
+				230FA4732A8FD80300948ABF /* CardFrontComponent.swift */,
+				230FA4752A8FD83200948ABF /* CardBackComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		230FA4562A8C8E6100948ABF /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				230FA4572A8C8E6F00948ABF /* ChatBubbleShape.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		230FA4672A8F7A1B00948ABF /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				230FA44F2A8C88DE00948ABF /* ButtonPrimaryComponent.swift */,
+				230FA4682A8F7A6400948ABF /* ButtonTimerComponent.swift */,
+				230FA46F2A8FD6B600948ABF /* ButtonStoryComponent.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		230FA46A2A8F7B9300948ABF /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				230FA46B2A8F7BDC00948ABF /* RepeatBreathingSheet.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		230FA42A2A8C7CAE00948ABF /* Serenity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230FA4392A8C7CAF00948ABF /* Build configuration list for PBXNativeTarget "Serenity" */;
+			buildPhases = (
+				230FA4272A8C7CAE00948ABF /* Sources */,
+				230FA4282A8C7CAE00948ABF /* Frameworks */,
+				230FA4292A8C7CAE00948ABF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Serenity;
+			productName = Serenity;
+			productReference = 230FA42B2A8C7CAE00948ABF /* Serenity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		230FA4232A8C7CAE00948ABF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					230FA42A2A8C7CAE00948ABF = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 230FA4262A8C7CAE00948ABF /* Build configuration list for PBXProject "Serenity" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 230FA4222A8C7CAE00948ABF;
+			productRefGroup = 230FA42C2A8C7CAE00948ABF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				230FA42A2A8C7CAE00948ABF /* Serenity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		230FA4292A8C7CAE00948ABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230FA4362A8C7CAF00948ABF /* Preview Assets.xcassets in Resources */,
+				230FA4332A8C7CAF00948ABF /* Assets.xcassets in Resources */,
+				230FA4412A8C7D4200948ABF /* Calm-space-ambient-track.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		230FA4272A8C7CAE00948ABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230FA4642A8F78DD00948ABF /* BreathPracticeInfoComponent.swift in Sources */,
+				230FA45A2A8C8ECF00948ABF /* ChatScrollView.swift in Sources */,
+				230FA45E2A8F76A700948ABF /* BreathingModel.swift in Sources */,
+				230FA4842A91B01A00948ABF /* GlobalStateViewModel.swift in Sources */,
+				230FA42F2A8C7CAE00948ABF /* SerenityApp.swift in Sources */,
+				230FA4522A8C8BFE00948ABF /* TutorialView.swift in Sources */,
+				230FA45C2A8F12B000948ABF /* TutorialViewModel.swift in Sources */,
+				230FA4582A8C8E6F00948ABF /* ChatBubbleShape.swift in Sources */,
+				230FA4502A8C88DE00948ABF /* ButtonPrimaryComponent.swift in Sources */,
+				230FA4722A8FD70700948ABF /* SwitchStoryView.swift in Sources */,
+				230FA4692A8F7A6400948ABF /* ButtonTimerComponent.swift in Sources */,
+				230FA44E2A8C840000948ABF /* HeaderComponent.swift in Sources */,
+				230FA4602A8F77EF00948ABF /* BreathViewModel.swift in Sources */,
+				230FA47C2A8FDB4000948ABF /* AffirmationCardView.swift in Sources */,
+				230FA4762A8FD83200948ABF /* CardBackComponent.swift in Sources */,
+				230FA4492A8C7E1800948ABF /* SentenceModel.swift in Sources */,
+				230FA46E2A8F7C3700948ABF /* BreathView.swift in Sources */,
+				230FA4662A8F796200948ABF /* BreathProgressComponent.swift in Sources */,
+				230FA47A2A8FD89400948ABF /* AffirmationCardViewModel.swift in Sources */,
+				230FA44B2A8C835400948ABF /* HomeView.swift in Sources */,
+				230FA4742A8FD80300948ABF /* CardFrontComponent.swift in Sources */,
+				230FA4542A8C8E3300948ABF /* ChatBubbleComponent.swift in Sources */,
+				230FA4472A8C7DD400948ABF /* DataStringHelper.swift in Sources */,
+				230FA43E2A8C7CEC00948ABF /* AudioService.swift in Sources */,
+				230FA47E2A91AD2400948ABF /* SwitchView.swift in Sources */,
+				230FA4622A8F788B00948ABF /* BreathHeaderComponent.swift in Sources */,
+				230FA46C2A8F7BDC00948ABF /* RepeatBreathingSheet.swift in Sources */,
+				230FA4702A8FD6B600948ABF /* ButtonStoryComponent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		230FA4372A8C7CAF00948ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		230FA4382A8C7CAF00948ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		230FA43A2A8C7CAF00948ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Serenity/Preview Content\"";
+				DEVELOPMENT_TEAM = 7FUC59ZN7P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marufboy.Serenity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		230FA43B2A8C7CAF00948ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Serenity/Preview Content\"";
+				DEVELOPMENT_TEAM = 7FUC59ZN7P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marufboy.Serenity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230FA4262A8C7CAE00948ABF /* Build configuration list for PBXProject "Serenity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230FA4372A8C7CAF00948ABF /* Debug */,
+				230FA4382A8C7CAF00948ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230FA4392A8C7CAF00948ABF /* Build configuration list for PBXNativeTarget "Serenity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230FA43A2A8C7CAF00948ABF /* Debug */,
+				230FA43B2A8C7CAF00948ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 230FA4232A8C7CAE00948ABF /* Project object */;
+}
