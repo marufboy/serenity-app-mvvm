@@ -25,11 +25,10 @@ struct TutorialView: View {
                         .foregroundColor(.white)
                     ChatScrollView(tutorialVM: tutorialVm)
                     
-                    if tutorialVm.isLastMessage == true {
-                        ButtonPrimaryComponent(geometry: geometry) {
-                            globalState.changeView(to: 3)
-                        }
+                    ButtonPrimaryComponent(geometry: geometry) {
+                        globalState.changeView(to: 3)
                     }
+                    .hideWhen(!tutorialVm.isLastMessage, remove: true)
                 }.frame(width: geometry.size.width, height: geometry.size.height)
             }
             .onAppear{

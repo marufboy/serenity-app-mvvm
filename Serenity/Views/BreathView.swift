@@ -60,8 +60,8 @@ struct BreathView: View {
                         ButtonPrimaryComponent(geometry: geometry, action: {
                             globalState.changeView(to: 4)
                         })
-                            .opacity(breathVM.isShowNextButton ? 1 : 0)
-                            .animation(.easeInOut, value: breathVM.isShowNextButton)
+                        .hideWhen(!breathVM.isShowNextButton, remove: true)
+                        .animation(.easeInOut, value: breathVM.isShowNextButton)
                         
                     }.frame(width: geometry.size.width)
                 }

@@ -32,21 +32,15 @@ struct AffirmationCardView: View {
                 }
                 Spacer()
                 Spacer()
-                finishButton(vm: affirmationCardVM, geometry: geometry)
+                ButtonPrimaryComponent(geometry: geometry, action: {
+                    globalState.changeView(to: 1)
+                })
+                .hideWhen(!affirmationCardVM.isFinished, remove: true)
+                .animation(.easeInOut, value: affirmationCardVM.isFinished)
                 Spacer()
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
             .background(Color.indigo)
-        }
-    }
-    
-    @ViewBuilder
-    func finishButton(vm: AffirmationCardViewModel, geometry: GeometryProxy) -> some View{
-        if vm.isFinished{
-            ButtonPrimaryComponent(geometry: geometry, action: {
-                globalState.changeView(to: 1)
-            })
-                .animation(.easeInOut, value: vm.isFinished)
         }
     }
 }

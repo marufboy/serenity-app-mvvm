@@ -38,6 +38,7 @@
 		230FA47C2A8FDB4000948ABF /* AffirmationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA47B2A8FDB4000948ABF /* AffirmationCardView.swift */; };
 		230FA47E2A91AD2400948ABF /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA47D2A91AD2400948ABF /* SwitchView.swift */; };
 		230FA4842A91B01A00948ABF /* GlobalStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230FA4832A91B01A00948ABF /* GlobalStateViewModel.swift */; };
+		23419B472A94B6FC00A5CC88 /* View+HiddenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23419B462A94B6FC00A5CC88 /* View+HiddenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		230FA47B2A8FDB4000948ABF /* AffirmationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationCardView.swift; sourceTree = "<group>"; };
 		230FA47D2A91AD2400948ABF /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		230FA4832A91B01A00948ABF /* GlobalStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStateViewModel.swift; sourceTree = "<group>"; };
+		23419B462A94B6FC00A5CC88 /* View+HiddenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HiddenView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		230FA4452A8C7DBC00948ABF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				23419B452A94B6A900A5CC88 /* Extensions */,
 				230FA4462A8C7DD400948ABF /* DataStringHelper.swift */,
 			);
 			path = Helpers;
@@ -226,6 +229,14 @@
 				230FA46B2A8F7BDC00948ABF /* RepeatBreathingSheet.swift */,
 			);
 			path = Sheet;
+			sourceTree = "<group>";
+		};
+		23419B452A94B6A900A5CC88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23419B462A94B6FC00A5CC88 /* View+HiddenView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +331,7 @@
 				230FA47A2A8FD89400948ABF /* AffirmationCardViewModel.swift in Sources */,
 				230FA44B2A8C835400948ABF /* HomeView.swift in Sources */,
 				230FA4742A8FD80300948ABF /* CardFrontComponent.swift in Sources */,
+				23419B472A94B6FC00A5CC88 /* View+HiddenView.swift in Sources */,
 				230FA4542A8C8E3300948ABF /* ChatBubbleComponent.swift in Sources */,
 				230FA4472A8C7DD400948ABF /* DataStringHelper.swift in Sources */,
 				230FA43E2A8C7CEC00948ABF /* AudioService.swift in Sources */,
